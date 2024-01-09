@@ -5,6 +5,8 @@ which parts of the UI we can build up from GOV.UK components vs things we will h
 
 Built with [GOV.UK prototype kit](https://prototype-kit.service.gov.uk/).
 
+![screenshot showing the search bar, filter section and query results](./screenshot.png)
+
 ## How to run
 
 See https://prototype-kit.service.gov.uk/docs/install/how-to-run-the-kit
