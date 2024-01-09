@@ -1,0 +1,142 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl" data-testid="page-title">Search for data products</h1>
+    <p class="govuk-body-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <form action="/search" method="get" role="search" class="search__form govuk-!-margin-bottom-4">
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-label--m" for="searchForm-search">Search</label>
+        <div class="search-container">
+          <input name="search" class="govuk-input search-input" id="searchForm-search" type="search" value="">
+          <button class="search-button" type="submit">
+            <svg aria-hidden="true" class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="40" height="40"><path d="M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z" fill="currentColor"></path>
+            </svg><span class="govuk-visually-hidden">Search</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    
+    <div class="govuk-accordion" data-module="govuk-accordion" data-i18n.show-all-sections="Show all filters" data-i18n.hide-all-sections="Hide all filters" id="accordion-default">
+      <div class="govuk-accordion__section govuk-accordion__section--expanded">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Type
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-checkboxes govuk-checkboxes--small" id="filter_text_target_id_user_access">
+              <div class="search-target govuk-checkboxes__item " data-item-seach-text="data i have access to">
+                <input class="govuk-checkboxes__input" name="apple" type="checkbox" value="yes" id="id_apple">
+      
+                <label class="govuk-label govuk-checkboxes__label" for="id_apple">
+                Apple (10)
+                </label>
+              </div>
+              <div class="search-target govuk-checkboxes__item " data-item-seach-text="data i have access to">
+                <input class="govuk-checkboxes__input" name="orange" type="checkbox" value="yes" id="id_orange">      
+                <label class="govuk-label govuk-checkboxes__label" for="id_orange">
+                Orange (5)
+                </label>
+              </div>
+              <div class="search-target govuk-checkboxes__item " data-item-seach-text="data i have access to">
+                <input class="govuk-checkboxes__input" name="banana" type="checkbox" value="yes" id="id_banana">
+      
+                <label class="govuk-label govuk-checkboxes__label" for="id_banana">
+                Banana (1)
+                </label>
+              </div>
+            </fieldset>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-2">
+            <a href="/dataset">Lorum Ipsums</a>
+        </h3>
+
+        <p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        <dl class="govuk-summary-list govuk-summary-list--no-border">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-padding-0">Score</dt>
+            <dd class="govuk-summary-list__value govuk-!-padding-0">
+            Numberwang
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-padding-0">Energy</dt>
+            <dd class="govuk-summary-list__value govuk-!-padding-0">
+            3.1GW
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-padding-0">Booleans</dt>
+            <dd class="govuk-summary-list__value govuk-!-padding-0">
+              Yes
+            </dd>
+          </div>
+      </div>
+  </div>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2">
+          <a href="/dataset">Dolor sit amets</a>
+      </h3>
+
+      <p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <dl class="govuk-summary-list govuk-summary-list--no-border">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-padding-0">Score</dt>
+          <dd class="govuk-summary-list__value govuk-!-padding-0">
+          0
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-padding-0">Energy</dt>
+          <dd class="govuk-summary-list__value govuk-!-padding-0">
+          Positive
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-padding-0">Booleans</dt>
+          <dd class="govuk-summary-list__value govuk-!-padding-0">
+            Null
+          </dd>
+        </div>
+    </div>
+</div>
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+
+  </div>
+
+{% endblock %}

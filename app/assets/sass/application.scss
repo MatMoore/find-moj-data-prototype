@@ -3,4 +3,27 @@
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 // 
 
-// Add extra styles here
+// Stolen from DfE
+
+.search-container {
+    display: flex;
+}
+
+.search-icon {
+    height: 100%;
+}
+
+.search-button {
+    background: #1d70b8;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    margin-bottom: 0;
+    padding: 0;
+    width: 40px;
+}
+
+.search-input {
+    border-right-width: 0;
+}
